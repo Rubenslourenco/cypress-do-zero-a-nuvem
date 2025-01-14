@@ -11,9 +11,5 @@ describe("Central de Atendimento ao Cliente TAT", () => {
     cy.get("#lastName").type("Lourenco");
     cy.get("#email").type("rubens@gmail.com");
     cy.get("#phone").type("11999999999");
-    cy.get("#open-text-area").type("Obrigado");
-    cy.get('.button[type="submit"]').click();
-
-    cy.get(".success").should("be.visible");
   });
 });

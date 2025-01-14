@@ -14,6 +14,6 @@ describe("Central de Atendimento ao Cliente TAT", () => {
     cy.get("#open-text-area").type("Obrigado");
     cy.get('.button[type="submit"]').click();
 
-    cy.get(".success").should("be.visible");
+    cy.get(''.sucess').should('be.visible');
   });
 });

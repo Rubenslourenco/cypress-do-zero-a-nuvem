@@ -61,7 +61,6 @@ describe("Central de Atendimento ao Cliente TAT", () => {
       firstName: "Lorenna",
       lastName: "Caetano",
       email: "lorenna@gmail.com",
-      phone: "11999999999999",
       text: "teste02",
     };
 

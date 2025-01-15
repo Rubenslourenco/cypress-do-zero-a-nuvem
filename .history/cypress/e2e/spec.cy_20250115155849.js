@@ -56,9 +56,8 @@ describe("Central de Atendimento ao Cliente TAT", () => {
       .should("have.value", "");
   });
 
-  it.only("Envia o formulario com sucesso usando um comando customizado", () => {
+  it("Envia o formulario com sucesso usando um comando customizado", () => {
     cy.fillMandatoryFieldsSubmit();
-
     cy.get(".success").should("be.visible");
   });
 });

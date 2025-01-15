@@ -32,27 +32,4 @@ describe("Central de Atendimento ao Cliente TAT", () => {
   it("Campo telefone Continua vazio quando preenchido com um valor não numerico", () => {
     cy.get("#phone").type("asdf").should("have.value", "");
   });
-
-  it.only("Preencher e limpa os campos nome, sobrenome, email, telefone", () => {
-    cy.get("#firstName")
-      .type("Rubens")
-      .should("have.value", "Rubens")
-      .clear()
-      .should("have.value", "");
-    cy.get("#lastName")
-      .type("Lourenco")
-      .should("have.value", "Lourenco")
-      .clear()
-      .should("have.value", "");
-    cy.get("#email")
-      .type("rubens@gmail.com")
-      .should("have.value", "rubens@gmail.com")
-      .clear()
-      .should("have.value", "");
-    cy.get("#phone")
-      .type("119999999")
-      .should("have.value", "119999999")
-      .clear()
-      .should("have.value", "");
-  });
 });

@@ -29,7 +29,8 @@ describe("Central de Atendimento ao Cliente TAT", () => {
     cy.get(".error").should("be.visible");
   });
 
-  it.only("Campo telefone Continua vazio quando preenchido com um valor não numerico", () => {
-    cy.get("#phone").type("asdf").should("have.value", "");
+  it.only("Campo telefone Continua vazio quando preenchido com um valor não numerico", () =>{
+    cy.get("#phone").type("asdf")..should("have.value", '');
+    
   });
 });
